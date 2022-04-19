@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Ročníková práce</title>
+	<link rel="stylesheet" href="style.css">
+<!-- # Neměl jsem jistou bakalářskou práci, proto jsem zvolil svojí ročníkovou práci ze střední školy #-->
+</head>
+<body>
+    <header>
+      <nav>
+        <a href="#uvod">Úvod</a>
+        <a href="#technologie">Technologie</a>
+        <a href="#databaze">Databáze</a>
+        <a href="#uzivatelské_rozhrani">Uživatelské rozhraní</a>
+        <a href="#boj">Boj</a>
+        <a href="#zaver">Závěr</a>
+      </nav>
+    </header>
+
+<div class="mainbody">
+<section class="block" id="uvod">
+	<h1>Úvod</h1>
+	<article>
+    	<h3>Ročníková práce</h3>
+    	<p> Pro svou ročníkovou práci na střední škole jsem si vybral webovou hru OGame, kterou hraji již delší dobu a jsem její příznivec. Mým cílem bylo vytvořit vlastní verzi, která bude zjednodušená. </p>
+  	</article>
+  	<article>
+    	<h3>OGame</h3>
+    	<p> Je browserová MMO (massively multiplayer online) textová hra z prostředí budoucnosti. V současnosti v české verzi existuje 16 serverů (ve hře nazývaných vesmíry). Hra byla dokončena roku 2000 a GameForge hru vydalo o dva roky později – 3. října 2002. Hra je z většiny bezplatná a dostupná v mnoha jazykových verzích. V současnosti má několik desítek milionů hráčů po celém světě. Hráč se může bezplatně zaregistrovat pod jménem a heslem. Každý herní vesmír je rozdělen na galaxie, ty jsou rozděleny na hvězdné systémy a ty se dále dělí do nejmenších oblastí – samotných planet. Každý systém má 15 po-zic pro možné planety. Pozice hráče v tomto světě se pak označuje číselně, např. 1:111:11 – takový hráč je v první galaxii, 111. systému a na 11. planetě. Hráči mohou zakládat aliance, mohou vyhlašovat války, bojovat mezi se-bou, obchodovat, či se navzájem vykořisťovat. Víceméně je snahou hráče dostat se na vyšší pozice ve statistikách. Hru lze hrát různými strategiemi.</p>
+  	</article>
+  	<article>
+    	<h3>Moje hra</h3>
+    	<p> Zjednodušená verze téměř v každém ohledu. Hráč po registraci má pouze jednu základnu, těžba surovin probíhá podle vzorce úroveň dolu * výkon dolu, není zavedená ani doba výstavby budov a budovy, co netěží žádné suroviny, mají pouze účel zpřístupňovat nové jednotky nebo budovy.  </p>
+  	</article>
+</section>
+
+<section class="block" id="technologie">
+	<h1>Technologie</h1>
+	<article>
+    	<h3>PHP</h3>
+    	<p> Je serverový skriptovací jazyk na straně serveru přinášející dynamickou podobu webu, výborný v komunikaci s databází MySql. Všechny komunikace s databází a většina projektu od registrace až po výpisy budov a počítání aktua-lizace surovin je dělaný pomocí PHP. Největší nevýhodou je nutnost refresho-vání po zpracování požadavku. </p>
+  	</article>
+  	<article>
+    	<h3>HTML / CSS / Bootstrap</h3>
+    	<p> Struktura stránky je pomocí jazyka HTML, jenž je formátován pomocí CSS a Bootstrapu, protože neumím stylovat. </p>
+    	<aside>
+    		<p>Bootstrap je svobodná a otevřená sada nástrojů kaskádových stylů pro tvorbu webu a webových aplikací. Obsahuje návrhářské šablony založené na HTML a CSS, sloužící pro úpravu typografie, formulářů, tlačítek, navigace a dalších komponent rozhraní, stejně jako další volitelná rozšíření programovacího jazyka JavaScriptu.</p>
+    	</aside>
+  	</article>
+  	<article>
+    	<h3>JavaScript</h3>
+    	<p> Skriptovací jazyk prováděný na straně klienta. Projekt využívá v JavaScriptu timer, který každou sekundu pošle na server php dotaz na aktuali-zování surovin, jehož výsledek zpracuje a vypíše na obrazovku. Výhoda je v tom, že se stránka nemusí každou sekundu refreshovat. </p>
+  	</article>
+  	<article>
+    	<h3>phpMyAdmin</h3>
+    	<p> Programový systém umožňující jednoduchou správu obsahu databáze MySQL prostřednictvím webového rozhraní. Umožňuje vytvářet/rušit databáze, vytvářet/upravovat/rušit tabulky, provádět SQL příkazy a spravovat klíče. </p>
+  	</article>
+</section>
+
+<section class="block" id="databaze">
+	<h1>Databáze</h1>
+	<article>
+    	<h3>ERD</h3>
+    	<p>Databáze (neboli datová základna, též databanka) je systém souborů s pevnou strukturou záznamů. Tyto soubory jsou mezi sebou navzájem propojeny pomocí klíčů. V širším smyslu jsou součástí databáze i softwarové prostředky, které umožňují manipulaci s uloženými daty a přístup k nim. Tento software se v české odborné literatuře nazývá systém řízení báze dat (SŘBD). Běžně se označením databáze – v závislosti na kontextu – myslí jak uložená data, tak i software (SŘBD).</p>
+    	<figure> 
+    		<img src="Databaze.png" style="width:100%">
+  			<figcaption>Obrázek 1 - ERD Databáze</figcaption>
+    	</figure>
+  	</article>
+</section>
+
+<section class="block" id="uzivatelské_rozhrani">
+	<h1>Uživatelské rozhraní</h1>
+	<article>
+    	<h3>Návrh uživatelského rozhraní</h3>
+    	<figure> 
+    		<img src="rozhrani.png" style="width:100%">
+  			<figcaption>Obrázek 2 - Uživatelské rozhraní</figcaption>
+    	</figure>
+    	<p>V horním menu vlevo má uživatel výpis aktuálního počtu surovin, který je každou sekundu pomocí JavaSciptu aktualizován bez nutnosti refreshe strán-ky. Vpravo od výpisu surovin v horním menu uživatel nalezne možnosti pro úpravy samotného profilu a možnost se odhlásit. V levém menu uživatel nalez-ne možnosti přechodu mezi různými stránkami. Uprostřed poté samotný výpis možností, co na stránce může postavit za budovy, výzkumy nebo jednotky, na jaké úrovni nebo v jakém počtu je má, kolik ho to bude stát a nějakou informa-ci jako například spotřebu energie. Tlačítko na postavení se uživateli zobrazí pouze tehdy, pokud splňuje všechny potřebné podmínky na postavení. </p>
+  	</article>
+</section>
+
+<section class="block" id="boj">
+	<h1>Boj</h1>
+	<article>
+		<h3>Bojování mezi hráči</h3>
+		<p>Ve druhé fázi hry hráč začíná budovat svoji armádu, která mu slouží jako jeho útočná, ale zároveň i jako obraná síla. Boj je pro hráče nejrychlejší způsob, jak získat suroviny, při úspěšném útoku hráč ukradne 80% surovin obránce, zničí 75% jeho obrané armády a získá 100 bodů za vítězství, při neúspěšném útoku je celá útočící armáda zničená a obránce získá 200 bodů za vítězství v obraně.</p>
+    	<h3>Vzorce</h3>
+    	<figure> 
+    		<img src="vzorec.png" style="width:100%">
+  			<figcaption>Obrázek 3 - Vzorce pro boj</figcaption>
+    	</figure>
+  	</article>
+</section>
+
+<section class="block" id="zaver">
+	<h1>Závěr</h1>
+	<article>
+		<h3>Závěr</h3>
+		<p>Hlavní část první poloviny projektu byla zaměřená hlavně na práci s majetkem uživatele (těžba surovin, stavění budov a armády) v druhé části jsem řešil již interakci mezi samotnými hráči, kteří na sebe mohou útočit. A vylepšil jsem grafické části projektu, přidal jsem budovám a jednotkám obráz-ky. Svou prací jsem se přiblížil své předloze OGame, kterou jsem byl inspi-rován a prohloubil si dovednosti v programocím jazyku php a osvojil si sql pří-kazy. </p>
+  	</article>
+</section>
+</div>
+
+
+<footer>
+	<p>Author: Michal Smolík<br>
+  	<a href="mailto:xsmom018@studenti.czu.cz">xsmom018@studenti.czu.cz</a></p>
+</footer>
+</body>
+</html>

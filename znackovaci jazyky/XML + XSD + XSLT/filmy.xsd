@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="scenarista" type="xs:string"/>
+  <xs:element name="rezije" type="xs:string"/>
+  <xs:element name="scenar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="scenarista" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hodnoceni">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="restrikceHodnoceni">
+          <xs:attribute name="hodnota" use="optional">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="procent" />
+                <xs:enumeration value="poradi" />
+                <xs:enumeration value="hvezdy" />                
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rok_natoceni"/>
+  <xs:element name="delka">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="restrikceDelka">
+          <xs:attribute name="jednotka" use="required">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="minut" />
+                <xs:enumeration value="pocet_rad" />
+                <xs:enumeration value="hodina" />
+                <xs:enumeration value="pocet_dilu" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="herec" />
+  <xs:element name="komentar" />
+  <xs:element name="informace">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="rezije" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="scenar" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="hodnoceni" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="rok_natoceni" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="delka" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="herci">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="herec" maxOccurs="unbounded" minOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="komentare">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="komentar" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="jmeno">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="informace"/>
+        <xs:element ref="herci"/>
+        <xs:element ref="komentare"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="nazev" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="zanr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="jmeno" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="kategorie" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="sci-fi" />
+            <xs:enumeration value="komedie" />
+            <xs:enumeration value="horor" />
+            <xs:enumeration value="drama" />
+            <xs:enumeration value="fantasy" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="druh">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="zanr" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="typ" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="film" />
+            <xs:enumeration value="serial" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="seznam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="druh" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+<xs:simpleType name="restrikceDelka">
+  <xs:restriction base="xs:double">
+    <xs:minInclusive value="1" />
+    <xs:maxInclusive value="300" />
+  </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="restrikceHodnoceni">
+  <xs:restriction base="xs:integer">
+    <xs:minInclusive value="1" />
+    <xs:maxInclusive value="800" />
+  </xs:restriction>
+</xs:simpleType>
+</xs:schema>

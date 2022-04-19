@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: linear-gradient(rgb(20, 30, 48), rgb(36, 59, 85));
+  text-align: center;
+}
+
+img {
+  border-radius: 16px;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #111;
+}
+
+.mainbody {
+  margin: 0;
+  padding: 5px;
+  background-image: linear-gradient(to top, rgb(0, 4, 40), rgb(0, 78, 146));
+}
+
+.mainbody > h1, .block {
+  margin: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 17px;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.block {
+  border-radius: 16px;
+  background-image: linear-gradient(to right, rgb(97, 144, 232), rgb(167, 191, 232));
+}
+
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-image: linear-gradient(to top, rgb(201, 214, 255), rgb(226, 226, 226));
+  border-radius: 16px;
+}
+
+footer {
+  text-align: center;
+  background-image: linear-gradient(to top, rgb(20, 30, 48), rgb(36, 59, 85));
+  color: lightgray;
+}
+
+footer p {
+  padding: 16px;
+  margin: 0;
+}

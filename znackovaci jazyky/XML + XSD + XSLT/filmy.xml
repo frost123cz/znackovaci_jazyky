@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='filmy.xsl'?>
+<seznam>
+	<druh typ="film">
+		<zanr kategorie="sci-fi">
+			<jmeno nazev="Star Wars">
+				<informace>
+					<rezije>George Lucas</rezije>
+					<scenar>
+						<scenarista>George Lucas</scenarista>
+					</scenar>
+					<hodnoceni hodnota="procent">87</hodnoceni>
+					<rok_natoceni>2005</rok_natoceni>
+					<delka jednotka="minut">140</delka>
+				</informace>
+				<herci>
+					<herec>Ewan McGregor</herec>
+					<herec>Hyden Christensen</herec>
+					<herec>Ian McDiarmid</herec>
+					<herec>Natalie Portman</herec>
+				</herci>
+				<komentare>
+					<komentar>Lucas to dokázal! Spojovací článek mezi původní a novou trilogií je jedna velká jízda. Souboje jsou úchvatné a vidět všechno, co jsme si zatím jen představovali (především úžasná přeměna Anakina v Dartha Vadera) na plátně a v tak strhující formě, je nepopsatelný zážitek.</komentar>
+					<komentar>Tak alespoň jeden ze tří...</komentar>
+				</komentare>
+			</jmeno>
+			<jmeno nazev="Hvezdna pechota">
+				<informace>
+					<rezije>Paul Verhoeven</rezije>
+					<scenar>
+						<scenarista>Edward Neumeier</scenarista>
+					</scenar>
+					<hodnoceni hodnota="poradi">385</hodnoceni>
+					<rok_natoceni>1997</rok_natoceni>
+					<delka jednotka="hodina">2</delka>
+				</informace>
+				<herci>
+					<herec>Casper Van Dien</herec>
+				</herci>
+				<komentare>
+					<komentar>Oscar 1 nominace: Vizuální efekty</komentar>
+				</komentare>
+			</jmeno>
+			<jmeno nazev="Star Trek">
+				<informace>
+					<rezije>J. J. Abrams</rezije>
+					<scenar>
+						<scenarista>Roberto Orci</scenarista>
+						<scenarista>Alex Kurtzman</scenarista>
+						<scenarista>Damon Lindelof</scenarista>
+					</scenar>
+					<hodnoceni hodnota="hvezdy">4</hodnoceni>
+					<rok_natoceni>2013</rok_natoceni>
+					<delka jednotka="hodina">1.30</delka>
+				</informace>
+				<herci>
+					<herec>Chris Pine</herec>
+					<herec>Zachary Quinto</herec>
+					<herec>Anton Yelchin</herec>
+					<herec>Zoe Saldana</herec>
+				</herci>
+				<komentare>
+					<komentar>Oscar 1 nominace: Vizuální efekty</komentar>
+					<komentar>Tak tohle byl jiný kalibr než ten Star Trek předtím , takhle se má dělat blockbuster, zábava, akce, dynamika, jo, jo pochoutka jak od Pohlreicha.</komentar>
+				</komentare>
+			</jmeno>
+		</zanr>	
+		<zanr kategorie="komedie">
+			<jmeno nazev="Johnny English">
+				<informace>
+					<rezije>Peter Howitt</rezije>
+					<scenar>
+						<scenarista>Peter Howitt</scenarista>
+						<scenarista>William Davies</scenarista>
+						<scenarista>Neal Purvis</scenarista>
+						<scenarista>Robert Wade</scenarista>
+					</scenar>
+					<hodnoceni hodnota="procent">66</hodnoceni>
+					<rok_natoceni>2003</rok_natoceni>
+					<delka jednotka="minut">84</delka>
+				</informace>
+				<herci>
+					<herec>Rowan Atkinson</herec>
+					<herec>Natalie Imbruglia</herec>
+				</herci>
+				<komentare>
+					<komentar>MI7 má nového agenta --Mr.Beana .Bond naruby při kterém sem se pobavil.</komentar>
+					<komentar>Docela zklamání protože jen malá část Atkinsonova pitvoření je směšná. Moc to nezachránil ani Malkovich.</komentar>
+				</komentare>
+			</jmeno>
+		</zanr>	
+		<zanr kategorie="horor">
+			<jmeno nazev="Vetrelec">
+				<informace>
+					<rezije>Ridley Scott</rezije>
+					<scenar>
+						<scenarista>Dan O'Bannon</scenarista>
+					</scenar>
+					<hodnoceni hodnota="poradi">27</hodnoceni>
+					<rok_natoceni>1979</rok_natoceni>
+					<delka jednotka="minut">107</delka>
+				</informace>
+				<herci>
+					<herec>Sigourney Weaver</herec>
+					<herec>Tom Skerritt</herec>
+					<herec>Veronica Cartwright</herec>
+				</herci>
+				<komentare>
+					<komentar>NFR 2002, Oscar 1 : Vizuální efekty + 1 nominace: Výprava</komentar>
+					<komentar>Působivější filmové monstrum neexistuje... </komentar>
+				</komentare>
+			</jmeno>
+		</zanr>	
+		<zanr kategorie="drama">
+			<jmeno nazev="Vykoupeni z veznice Shawshank">
+				<informace>
+					<rezije>Frank Darabont</rezije>
+					<scenar>
+						<scenarista>Frank Darabont</scenarista>
+					</scenar>
+					<hodnoceni hodnota="procent">95</hodnoceni>
+					<rok_natoceni>1994</rok_natoceni>
+					<delka jednotka="minut">142</delka>
+				</informace>
+				<herci>
+					<herec>Tim Robbins</herec>
+					<herec>Morgan Freeman</herec>
+				</herci>
+				<komentare>
+					<komentar>NFR 2015, Oscar 7 nominací: Nejlepší film, Herec HR - Morgan Freeman, Kamera, Střih, Hudba, Zvuk, Scénář - A</komentar>
+				</komentare>
+			</jmeno>
+			<jmeno nazev="Zelena mile">
+				<informace>
+					<rezije>Frank Darabont</rezije>
+					<scenar>
+						<scenarista>Frank Darabont</scenarista>
+					</scenar>
+					<hodnoceni hodnota="procent">93</hodnoceni>
+					<rok_natoceni>1999</rok_natoceni>
+					<delka jednotka="minut">188</delka>
+				</informace>
+				<herci>
+					<herec>Tom Hanks</herec>
+					<herec>David Morse</herec>
+				</herci>
+				<komentare>
+					<komentar>Čistých pět to není, ale je to prostě nádherný kus filmařiny...</komentar>
+				</komentare>
+			</jmeno>
+		</zanr>	
+	</druh>
+
+	<druh typ="serial">
+		<zanr kategorie="sci-fi">
+			<jmeno nazev="Hvezdna brana">
+				<informace>
+					<rezije>Martin Wood</rezije>
+					<scenar>
+						<scenarista>Jeff F. King</scenarista>
+						<scenarista>Carl Binder</scenarista>
+					</scenar>
+					<hodnoceni hodnota="procent">72</hodnoceni>
+					<rok_natoceni>1997</rok_natoceni>
+					<delka jednotka="pocet_rad">10</delka>
+				</informace>
+				<herci>
+					<herec>Richard Dean Anderson</herec>
+					<herec>Amanda Tapping</herec>
+					<herec>Michael Shanks</herec>
+				</herci>
+				<komentare>
+					<komentar>Mé seriálové guilty pleasure... bez Richarda Deana Andersona už to ale v závěrečných sériích nebylo ono.</komentar>
+				</komentare>
+			</jmeno>
+			<jmeno nazev="Star Trek: Enterprise">
+				<informace>
+					<rezije>Winrich Kolbe</rezije>
+					<scenar>
+						<scenarista>Rick Berman</scenarista>
+						<scenarista>Brannon Braga</scenarista>
+						<scenarista>Manny Coto</scenarista>
+					</scenar>
+					<hodnoceni hodnota="poradi">202</hodnoceni>
+					<rok_natoceni>2001</rok_natoceni>
+					<delka jednotka="pocet_dilu">97</delka>
+				</informace>
+				<herci>
+					<herec>Dennis McCarthy</herec>
+				</herci>
+				<komentare>
+					<komentar>Seznámení tohohle seriálu je super a opět se přiblížil o krůček nahoru, super příběh a opět pár slušných scén se našlo bohužel ne každý díl je povedený ale jde to to dobrou cestou.</komentar>
+					<komentar>Star Wars je lepší!</komentar>
+				</komentare>
+			</jmeno>
+		</zanr>	
+		<zanr kategorie="fantasy">
+			<jmeno nazev="Zaklinac">
+				<informace>
+					<rezije>Alik Sakharov</rezije>
+					<scenar>
+						<scenarista>Lauren Schmidt</scenarista>
+						<scenarista>Beau DeMayo</scenarista>
+						<scenarista>Declan De Barra</scenarista>
+					</scenar>
+					<hodnoceni hodnota="procent">78</hodnoceni>
+					<rok_natoceni>2019</rok_natoceni>
+					<delka jednotka="pocet_rad">2</delka>
+				</informace>
+				<herci>
+					<herec>Henry Cavill</herec>
+					<herec>Freya Allan</herec>
+					<herec>Joey Batey</herec>
+				</herci>
+				<komentare>
+					<komentar>Pro mě je Witcher srdcová záležitost, takže "SPER TO ĎAS . . ". PC hry mám velice oblíbené, stejně tak i původní polský seriál z roku 2002. Uvidíme co přinesou další série</komentar>
+				</komentare>
+			</jmeno>
+			
+		</zanr>	
+	</druh>
+</seznam>
